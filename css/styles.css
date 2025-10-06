@@ -1,0 +1,12 @@
+:root{
+--Red: hsl(4, 100%, 67%);
+--Blue800: hsl(234, 29%, 20%);
+--Blue700: hsl(235, 18%, 26%);
+--Grey: hsl(0, 0%,58%);
+}
+*{
+    margin: 0;
+}
+html{
+    font-size: 16px;
+}
