@@ -7,7 +7,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
+  <!-- FONTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -17,32 +20,42 @@
   <section class="main-form">
     <article>
       <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
       <ul>
-        Join 60,000+ product managers receiving monthly updates on:
-        <li>Product discovery and building what matters</li>
-        <li>Measuring to ensure updates are a success</li>
-        <li>And much more!</li>
+        <li>
+          <img src="./assets/images/icon-list.svg" alt="">
+          <span>Product discovery and building what matters</span></li>
+        <li>
+          <img src="./assets/images/icon-list.svg" alt="">
+          <span>Measuring to ensure updates are a success</span></li>
+        <li>
+          <img src="./assets/images/icon-list.svg" alt="">
+          <span>And much more!</span></li>
       </ul>
-      <form action="">
-        <label for="email-input">Email address</label>
-        <input type="email" placeholder="email@company.com"></input>
-        <input type="submit">Subscribe to monthly newsletter</input>
+      <form action="" novalidate>
+        <label for="email-input"><b>Email address</b></label> <br>
+        <input type="email" placeholder="email@company.com" id="email-input" name="email"></input> <br>
+        <button type="submit">Subscribe to monthly newsletter</button>
       </form>
     </article>
+    <div class="side_img">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
+    </div>
   </section>
 
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
   <section class="message">
+  <img src="./assets/images/icon-success.svg" alt="icon-success" class="large_success_img">
   <h1>Thanks for subscribing!</h1>
 
   <p>
-    A confirmation email has been sent to ash@loremcompany.com.
+    A confirmation email has been sent to <b>ash@loremcompany.com</b>.
     Please open it and click the button inside to confirm your subscription.
   </p>
 
-  <button type="submit">Dismiss message</button>
+  <button type="reset">Dismiss message</button>
   </section>
   <!-- Success message end -->
   
