@@ -20,7 +20,7 @@ body{
 }
 /* message  */
 .message{
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 35%;
     padding: 2.5em;
@@ -38,7 +38,7 @@ section{
     padding: 1.5em;
 }
 .main-form{
-    display: none;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -86,6 +86,9 @@ input{
     border: 1px solid var(--Grey);
     border-radius: 10px;
     box-sizing: border-box;
+}
+.error-message{
+    display: inline
 }
 input:focus{
     border: 1px solid var(--Blue800);
