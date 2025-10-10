@@ -4,6 +4,7 @@ const emailInput = document.getElementById('email-input');
 
 const mainpage = document.getElementsByClassName('main-form')[0];
 const messagepage = document.getElementsByClassName('message')[0];
+const displayemail = document.getElementById('displayemail');
 
 // Create error message <span>
 const errormessage = document.createElement('span');
@@ -33,7 +34,7 @@ form.addEventListener('submit', (event) => {
     emailInput.before(errormessage);
   }
   else {
-
+    displayemail.textContent = emailInput.value.trim();
     mainpage.style.display = 'none';
     messagepage.style.display = 'flex';
 
